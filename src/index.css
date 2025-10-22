@@ -8,89 +8,100 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Mrchapter-Verse Media Brand Colors - Light Mode */
-    --background: 0 0% 100%;
-    --foreground: 220 60% 15%;
+    /* Premium Luxurious Theme - Light Mode */
+    --background: 0 0% 98%;
+    --foreground: 240 15% 9%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 220 60% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 15% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 60% 15%;
+    --popover-foreground: 240 15% 9%;
 
-    --primary: 210 90% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 43 96% 56%;
+    --primary-foreground: 240 15% 9%;
 
-    --secondary: 220 60% 15%;
+    --secondary: 240 15% 9%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 20% 45%;
+    --muted: 240 5% 92%;
+    --muted-foreground: 240 8% 45%;
 
-    --accent: 210 85% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 240 15% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 85%;
-    --input: 220 20% 85%;
-    --ring: 210 90% 55%;
+    --border: 240 10% 88%;
+    --input: 240 10% 88%;
+    --ring: 43 96% 56%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom Brand Tokens */
-    --navy: 220 60% 15%;
-    --electric-blue: 210 90% 55%;
-    --metallic: 220 10% 65%;
-    --dark-bg: 220 50% 8%;
+    /* Premium Brand Tokens */
+    --luxury-gold: 43 96% 56%;
+    --luxury-gold-light: 45 100% 65%;
+    --deep-charcoal: 240 15% 9%;
+    --refined-silver: 240 8% 75%;
+    --midnight: 240 25% 6%;
+    --pearl: 0 0% 96%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220, 60%, 15%) 0%, hsl(220, 50%, 8%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(210, 90%, 55%) 0%, hsl(210, 85%, 45%) 100%);
-    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsla(220, 60%, 8%, 0.8) 100%);
+    /* Premium Gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(240, 15%, 9%) 0%, hsl(240, 25%, 6%) 50%, hsl(240, 15%, 9%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43, 96%, 56%) 0%, hsl(45, 100%, 65%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(43, 96%, 56%) 0%, hsl(38, 90%, 50%) 100%);
+    --gradient-shine: linear-gradient(135deg, transparent 0%, hsla(43, 96%, 56%, 0.1) 50%, transparent 100%);
+    --gradient-overlay: linear-gradient(180deg, hsla(240, 25%, 6%, 0) 0%, hsla(240, 25%, 6%, 0.95) 100%);
     
-    /* Shadows & Effects */
-    --shadow-glow: 0 0 40px hsla(210, 90%, 55%, 0.3);
-    --shadow-card: 0 10px 30px -10px hsla(220, 60%, 15%, 0.2);
-    --glass-bg: hsla(0, 0%, 100%, 0.05);
-    --glass-border: hsla(0, 0%, 100%, 0.1);
+    /* Premium Effects */
+    --shadow-luxury: 0 20px 60px -15px hsla(43, 96%, 56%, 0.25), 0 10px 30px -10px hsla(240, 15%, 9%, 0.3);
+    --shadow-gold-glow: 0 0 80px hsla(43, 96%, 56%, 0.4), 0 0 40px hsla(43, 96%, 56%, 0.3);
+    --shadow-elegant: 0 8px 32px -8px hsla(240, 15%, 9%, 0.15);
+    --shadow-premium: 0 25px 50px -12px hsla(240, 15%, 9%, 0.25);
+    --glass-luxury: hsla(0, 0%, 100%, 0.03);
+    --glass-border-light: hsla(43, 96%, 56%, 0.15);
+    
+    /* Transitions */
+    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    /* Mrchapter-Verse Media Brand Colors - Dark Mode (Default) */
-    --background: 220 50% 8%;
-    --foreground: 0 0% 98%;
+    /* Premium Luxurious Theme - Dark Mode (Primary) */
+    --background: 240 25% 6%;
+    --foreground: 43 96% 92%;
 
-    --card: 220 45% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 240 20% 10%;
+    --card-foreground: 43 96% 92%;
 
-    --popover: 220 50% 10%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 240 22% 8%;
+    --popover-foreground: 43 96% 92%;
 
-    --primary: 210 90% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 43 96% 56%;
+    --primary-foreground: 240 15% 9%;
 
-    --secondary: 220 60% 15%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 43 96% 92%;
 
-    --muted: 220 40% 18%;
-    --muted-foreground: 220 20% 65%;
+    --muted: 240 15% 18%;
+    --muted-foreground: 240 8% 70%;
 
-    --accent: 210 85% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 240 15% 9%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 40% 20%;
-    --input: 220 40% 20%;
-    --ring: 210 90% 55%;
+    --border: 240 15% 20%;
+    --input: 240 15% 18%;
+    --ring: 43 96% 56%;
 
-    /* Enhanced Glass & Effects for Dark Mode */
-    --glass-bg: hsla(220, 45%, 15%, 0.4);
-    --glass-border: hsla(210, 90%, 55%, 0.2);
-    --shadow-glow: 0 0 60px hsla(210, 90%, 55%, 0.4);
+    /* Enhanced Premium Effects for Dark Mode */
+    --glass-luxury: hsla(240, 20%, 15%, 0.5);
+    --glass-border-light: hsla(43, 96%, 56%, 0.25);
+    --shadow-gold-glow: 0 0 100px hsla(43, 96%, 56%, 0.5), 0 0 50px hsla(43, 96%, 56%, 0.4);
+    --shadow-luxury: 0 20px 60px -15px hsla(43, 96%, 56%, 0.3), 0 10px 30px -10px hsla(0, 0%, 0%, 0.5);
   }
 }
 
@@ -101,38 +112,109 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-optical-sizing: auto;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+  
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
   }
 }
 
 @layer utilities {
-  .gradient-hero {
-    background: var(--gradient-hero);
+  /* Premium Gradients */
+  .gradient-luxury {
+    background: var(--gradient-luxury);
+  }
+  
+  .gradient-gold {
+    background: var(--gradient-gold);
   }
   
   .gradient-accent {
     background: var(--gradient-accent);
   }
   
-  .glass-card {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    backdrop-filter: blur(12px);
+  .gradient-shine {
+    background: var(--gradient-shine);
   }
   
-  .text-gradient {
-    background: var(--gradient-accent);
+  /* Premium Glass Effects */
+  .glass-luxury {
+    background: var(--glass-luxury);
+    border: 1px solid var(--glass-border-light);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+  
+  /* Premium Text Effects */
+  .text-gradient-gold {
+    background: var(--gradient-gold);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
+  .text-shimmer {
+    background: linear-gradient(90deg, hsl(43, 96%, 56%) 0%, hsl(45, 100%, 65%) 50%, hsl(43, 96%, 56%) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+  }
+  
+  /* Premium Shadows */
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+  
+  .shadow-gold-glow {
+    box-shadow: var(--shadow-gold-glow);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  /* Premium Borders */
+  .border-gold {
+    border-color: hsl(var(--primary));
+  }
+  
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+                var(--gradient-gold) border-box;
+  }
+  
+  /* Hover Effects */
+  .hover-lift {
+    transition: var(--transition-luxury);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-luxury);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-gold-glow);
+    transition: var(--transition-smooth);
   }
 }
